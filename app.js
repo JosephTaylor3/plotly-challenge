@@ -174,7 +174,7 @@ d3.json("samples.json").then(function(data) {
         // create trace for bar chart
         var trace = {
             x: slicedIDs,
-            y: slicedValues.map(d => `OTU ${d}`).sort(),
+            y: slicedValues.map(d => `OTU ${d}`),
             type: "bar",
             text: slicedLabels,
             orientation: "h",
